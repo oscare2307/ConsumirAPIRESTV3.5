@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumirApiRestV2.Paginas.ActualizarCategoriaPage"
+             Title="ActualizarCategoriaPage">
+    <VerticalStackLayout Padding="20">
+
+        <Label Text="ID de Categoría" FontSize="Medium" />
+        <Entry x:Name="EntryCategoriaId" Placeholder="Ingrese el ID de la categoría" />
+
+        <Label Text="Nombre" FontSize="Medium" />
+        <Entry x:Name="EntryNombre" Placeholder="Ingrese el nuevo nombre" />
+
+        <Button Text="Actualizar Categoría"  Clicked="Button_Clicked" BackgroundColor="#8fff2b" TextColor="White"  Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

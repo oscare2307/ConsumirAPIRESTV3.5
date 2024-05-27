@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumirApiRestV2.Paginas.ConsultarProductoPage"
+             Title="Consultar Productos">
+    <VerticalStackLayout
+        Padding="30,0">
+
+        <Label Text="Imágenes:" />
+        <CarouselView x:Name="CarouselViewImages" HeightRequest="300">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Frame HasShadow="True" BorderColor="Gray" CornerRadius="10">
+                            <Image Source="{Binding .}" Aspect="AspectFit"/>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <Label Text="Ingrese el código del producto" />
+        <Entry x:Name="EntryCodigoProducto" Placeholder="Código del producto" />
+        <Button Text="Consultar" Clicked="Button_Clicked"  BackgroundColor="#0000ff" TextColor="White"  Margin="0,20,0,0"/>
+
+        <Label Text="Detalles del Producto" FontAttributes="Bold" Margin="0,20,0,10" />
+
+        <Label Text="Título:" />
+        <Entry x:Name="EntryTituloProducto" IsReadOnly="True" />
+
+        <Label Text="Precio:" />
+        <Entry x:Name="EntryPrecioProducto" IsReadOnly="True" />
+
+        <Label Text="Categoría:" />
+        <Entry x:Name="EntryCategoriaProducto" IsReadOnly="True" />
+
+        <Label Text="Descripción:" />
+        <Editor x:Name="EntryDescripcionProducto" IsReadOnly="True" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumirApiRestV2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="45">
+
+            <Button Text="Consultar Producto" Clicked="Button_Clicked" VerticalOptions="Center" />
+            <Button Text="Consultar Categoria" Clicked="Button_Clicked_1" VerticalOptions="Center" />
+            <Button Text="Consultar Usuarios" Clicked="Button_Clicked_2" VerticalOptions="Center" />
+            <Button Text="Crear Producto" Clicked="Button_Clicked_3" VerticalOptions="Center" />
+            <Button Text="Actualizar Producto" Clicked="Button_Clicked_4" VerticalOptions="Center" />
+            <Button Text="Eliminar Producto" Clicked="Button_Clicked_5" VerticalOptions="Center" />
+            <Button Text="Crear Categoria" Clicked="Button_Clicked_6" VerticalOptions="Center" />
+            <Button Text="Actualizar Categoria" Clicked="Button_Clicked_7" VerticalOptions="Center" />
+            <Button Text="Eliminar Categoria" Clicked="Button_Clicked_8" VerticalOptions="Center" />
+            <Button Text="Crear Usuario" Clicked="Button_Clicked_9" VerticalOptions="Center"/>
+            <Button Text="Actualizar Usario" Clicked="Button_Clicked_10" VerticalOptions="Center"/>
+            <Button Text="Eliminar Usuario" Clicked="Button_Clicked_11" VerticalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

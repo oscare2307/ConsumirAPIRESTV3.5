@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumirApiRestV2.Paginas.EliminarUsuarioPage"
+             Title="Eliminar Usuario">
+    <VerticalStackLayout Padding="25">
+
+        <Label Text="ID del Usuario" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        <Entry x:Name="EntryUserId" 
+               Placeholder="Ingrese el ID del usuario" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Button Text="Eliminar Usuario" 
+                 Clicked="Button_Clicked"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" 
+                BackgroundColor="#f44336" TextColor="White"  Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

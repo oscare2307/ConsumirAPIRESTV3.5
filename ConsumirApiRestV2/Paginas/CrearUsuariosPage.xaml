@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumirApiRestV2.Paginas.CrearUsuariosPage"
+             Title="Crear Usuarios">
+    <VerticalStackLayout Padding="25">
+
+        <Entry x:Name="EntryNombre" Placeholder="Nombre" />
+        <Entry x:Name="EntryEmail" Placeholder="Email" />
+        <Entry x:Name="EntryPassword" Placeholder="Contraseña" IsPassword="True" />
+        <Entry x:Name="EntryAvatar" Placeholder="URL del Avatar" />
+        <Button Text="Crear Usuario"  Clicked="Button_Clicked" VerticalOptions="Center" BackgroundColor="#FF8000" TextColor="White"  Margin="0,20,0,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConsumirApiRestV2.Paginas.CrearProductoPage"
+             Title="CrearProductoPage">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <Label Text="Título del Producto" />
+        <Entry x:Name="EntryTitulo" Placeholder="Ingrese el título" />
+
+        <Label Text="Precio" />
+        <Entry x:Name="EntryPrecio" Placeholder="Ingrese el precio" Keyboard="Numeric" />
+
+        <Label Text="Descripción" />
+        <Editor x:Name="EntryDescripcion" Placeholder="Ingrese la descripción" HeightRequest="100" />
+
+        <Label Text="URL de la Imagen" />
+        <Entry x:Name="EntryImagen" Placeholder="Ingrese la URL de la imagen" />
+
+        <Button Text="Crear Producto" Clicked="Button_Clicked"  BackgroundColor="#FF8000" TextColor="White" Margin="0,20,0,0" />
+
+    </VerticalStackLayout>
+</ContentPage>
